@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+ 
+    <h:head>
+        <title>JSF 2.0</title>
+    </h:head>
+    <h:body>
+    <h:form>
+  
+    	   	 
+    	<h:inputText name="nbr" value="#{personneBean.nbr}" binding="#{personneBean.input}"></h:inputText> <br />
+    	<h:outputLabel value="#{personneBean.msg}" />
+    	<h:commandButton name="Create" value="#{personneBean.nbrT}" action="#{personneBean.TestNbr}" binding="#{personneBean.button}"></h:commandButton>
+    	<h:commandButton name="raz" value="raz" action="#{personneBean.raz}"></h:commandButton>
+    </h:form>
+    </h:body>
+</html>
